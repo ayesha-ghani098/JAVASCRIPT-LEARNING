@@ -330,3 +330,56 @@ function ms() {
     div.innerHTML = div.innerHTML + tp + " %";
 }
 // Chapter 9--11 //
+function citygreet() {
+    var city = document.getElementById('city').value;
+
+    if (city == "Karachi" || city == "karachi") {
+        var div = document.getElementById('cg');
+        div.innerHTML = div.innerHTML + "Welcome to city of lights!<br>";
+    } else {
+        var div = document.getElementById('cg');
+        div.innerHTML = div.innerHTML + "Sorry No Greetings!";
+    }
+}
+
+function gendercheck() {
+    var gender = document.getElementById('gender').value;
+
+    if (gender == "male") {
+        var div = document.getElementById('gc');
+        div.innerHTML = div.innerHTML + "Good Morning Sir!<br>";
+    } else if (gender == "female") {
+        var div = document.getElementById('gc');
+        div.innerHTML = div.innerHTML + "Good Morning Mam!<br>";
+    } else {
+        var div = document.getElementById('gc');
+        div.innerHTML = div.innerHTML + "Good Morning Other Gender We respect your gender too!<br>";
+    }
+}
+
+function signal() {
+    var color = document.getElementById('color').value;
+
+    if (color == "red") {
+        var div = document.getElementById('red');
+        div.innerHTML = div.innerHTML + "Must Stop<br>";
+    } else if (color == "yellow") {
+        var div = document.getElementById('yellow');
+        div.innerHTML = div.innerHTML + "Ready to move<br>";
+    } else {
+        var div = document.getElementById('green');
+        div.innerHTML = div.innerHTML + "Move now";
+    }
+}
+
+function fuel() {
+    var fue = document.getElementById('fuel').value;
+    var fuel = parseFloat(fue);
+    if (fuel < 0.25) {
+        var div = document.getElementById('fuelrefill');
+        div.innerHTML = div.innerHTML + "Please refill the fuel in your car<br>";
+    } else {
+        var div = document.getElementById('fuelrefill');
+        div.innerHTML = div.innerHTML + "Have a safe journey<br>";
+    }
+}

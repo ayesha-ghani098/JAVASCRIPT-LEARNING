@@ -7,9 +7,13 @@
     <title>Chapter 9--11</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="cload">
     <a href="./index.html"><button>Home</button></a>
     <br><br>
 
@@ -19,29 +23,67 @@
         <div>
             <img src="./images/44.PNG" alt="">
         </div>
-
+        <input type="text" id="city" placeholder="Enter your city name here">
+        <button onclick="citygreet()"> Click Here</button>
         <h1>Answer</h1>
+
+        <div id="cg"></div>
         <br><br>
         <br><br>
         <div>
             <img src="./images/45.PNG" alt="">
         </div>
 
+        <input type="text" id="gender" placeholder="Enter your gender  here">
+        <button onclick="gendercheck()"> Click Here</button>
         <h1>Answer</h1>
+
+        <div id="gc"></div>
         <br><br>
         <br><br>
         <div>
             <img src="./images/46.PNG" alt="">
         </div>
-
+        <input type="text" id="color" placeholder="Enter your gender  here">
+        <button onclick="signal()"> Click Here</button>
         <h1>Answer</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Signal Color</th>
+                    <th scope="col">Message</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Red</th>
+                    <td id="red"></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Yellow</th>
+                    <td id="yellow">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Green</th>
+                    <td id="green"> </td>
+
+                </tr>
+            </tbody>
+        </table>
         <br><br>
         <br><br>
         <div>
             <img src="./images/47.PNG" alt="">
         </div>
+        <input type="text" id="fuel" placeholder="Enter your car fuel in litres here">
+        <button onclick="fuel()"> Click Here</button>
 
         <h1>Answer</h1>
+        <div id="fuelrefill"></div>
         <br><br>
         <br><br>
         <div>
