@@ -13,7 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
-<body onload="cload">
+<body>
     <a href="./index.html"><button>Home</button></a>
     <br><br>
 
@@ -44,7 +44,7 @@
         <div>
             <img src="./images/46.PNG" alt="">
         </div>
-        <input type="text" id="color" placeholder="Enter your gender  here">
+        <input type="text" id="color" placeholder="Enter Color here">
         <button onclick="signal()"> Click Here</button>
         <h1>Answer</h1>
         <table class="table table-striped">
@@ -102,7 +102,12 @@
             <img src="./images/52.PNG" alt="">
         </div>
 
-        <h1>Answer</h1>
+        <button onclick="ans_a()">Answer A</button>
+        <button onclick="ans_b()">Answer B</button>
+        <button onclick="ans_c()">Answer C</button>
+        <button onclick="ans_d()">Answer D</button>
+        <button onclick="ans_e()">Answer E</button>
+        <button onclick="ans_f()">Answer F</button>
         <br><br>
 
         <br><br>
@@ -112,43 +117,61 @@
         <div>
             <img src="./images/54.PNG" alt="">
         </div>
-
+        <input type="text" id="subject1" placeholder="Enter Marks of sub1"><br><br>
+        <input type="text" id="subject2" placeholder="Enter Marks of sub1"><br><br>
+        <input type="text" id="subject3" placeholder="Enter Marks of sub1"><br><br>
+        <button onclick="marksh()">Click Here For Answer</button>
         <h1>Answer</h1>
+        <div id="marks"></div>
         <br><br>
         <br><br>
         <div>
             <img src="./images/55.PNG" alt="">
         </div>
-
+        <input type="number" id="guessnmb" placeholder="Enter Your Guess"><br><br>
+        <button onclick="guessgame()"> Click Here</button>
         <h1>Answer</h1>
+        <div id="guesss"></div>
         <br><br>
         <br><br>
         <div>
             <img src="./images/56.PNG" alt="">
         </div>
+        <input type="number" id="nn" placeholder="Enter number">
+        <button onclick="divisibleby3()"> Click Here</button>
 
         <h1>Answer</h1>
+        <div id="nnbb"></div>
         <br><br>
         <br><br>
         <div>
             <img src="./images/57.PNG" alt="">
         </div>
-
+        <input type="number" id="eeoo" placeholder="Enter number">
+        <button onclick="evenodd()"> Click Here</button>
         <h1>Answer</h1>
+        <div id="eoo"></div>
         <br><br>
         <br><br>
         <div>
             <img src="./images/58.PNG" alt="">
         </div>
-
+        <input type="number" id="tmp" placeholder="Enter temperature">
+        <button onclick="temp()"> Click Here</button>
         <h1>Answer</h1>
+        <div id="temperature"></div>
         <br><br>
         <br><br>
         <div>
             <img src="./images/59.PNG" alt="">
         </div>
+        <input type="number" id="calnmb1" placeholder="Enter number 1"><br><br>
+        <input type="number" id="calnmb2" placeholder="Enter number 2"><br><br>
+        <input type="text" id="operator" placeholder="Enter operator"><br><br>
+        <button onclick="calculator()"> Click Here</button>
 
         <h1>Answer</h1>
+        <div id="cal"></div>
         <br><br>
     </div>
 </body>

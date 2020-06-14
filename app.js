@@ -383,3 +383,181 @@ function fuel() {
         div.innerHTML = div.innerHTML + "Have a safe journey<br>";
     }
 }
+
+
+function marksh() {
+    var subject1 = document.getElementById('subject1').value;
+    var ss1 = parseInt(subject1);
+    var subject2 = document.getElementById('subject2').value;
+    var ss2 = parseInt(subject2);
+    var subject3 = document.getElementById('subject3').value;
+    var ss3 = parseInt(subject3);
+    var ttotal = ss1 + ss2 + ss3;
+    var tpp = ttotal / 300 * 100;
+    if (tpp >= 80) {
+        var div = document.getElementById('marks');
+        div.innerHTML = div.innerHTML + "<h1>Marks Sheet</h1><br> Total Marks: 300;<br>Marks Obtained: " + ttotal + "<br> Percentage:" + tpp + "<br> Grade: A-One<br> Remarks: Excellent";
+    } else if (tpp >= 70) {
+        var div = document.getElementById('marks');
+        div.innerHTML = div.innerHTML + "<h1>Marks Sheet</h1><br> Total Marks: 300;<br>Marks Obtained: " + ttotal + "<br> Percentage:" + tpp + "<br> Grade: A <br> Remarks: Good";
+    } else if (tpp >= 60) {
+        var div = document.getElementById('marks');
+        div.innerHTML = div.innerHTML + "<h1>Marks Sheet</h1><br> Total Marks: 300;<br>Marks Obtained: " + ttotal + "<br> Percentage:" + tpp + "<br> Grade: B <br> Remarks: You need to improve";
+    } else {
+        var div = document.getElementById('marks');
+        div.innerHTML = div.innerHTML + "<h1>Marks Sheet</h1><br> Total Marks: 300;<br>Marks Obtained: " + ttotal + "<br> Percentage:" + tpp + "<br> Grade: Fail<br> Remarks: Sorry";
+    }
+
+}
+
+
+function ans_a() {
+    var avar = 4;
+    if (++avar === 5) {
+        alert("given condition for variable a is true");
+    }
+}
+
+function ans_b() {
+    var varb = 82;
+    if (varb++ === 83) {
+        alert("given condition for variable b is true");
+    }
+
+}
+
+function ans_c() {
+    var varc = 12;
+    if (varc++ === 13) {
+        alert("condition 1 is true");
+    }
+    if (varc === 13) {
+        alert("condition 2 is true");
+    }
+    if (++varc < 14) {
+        alert("condition 3 is true");
+    }
+    if (varc === 14) {
+        alert("condition 4 is true");
+    }
+
+}
+
+function ans_d() {
+    var materialCost = 20000;
+    var laborCost = 2000;
+    var totalCost = materialCost + laborCost;
+    if (totalCost === laborCost + materialCost) {
+        alert("The cost equals");
+    }
+
+}
+
+function ans_e() {
+    if (true) {
+        alert("True");
+    }
+
+}
+
+function ans_f() {
+    if ("car" < "cat") {
+        alert("car is smaller than cat");
+    }
+
+}
+
+
+function guessgame() {
+    var secretnmb = 8;
+    var guessnmb = document.getElementById('guessnmb').value;
+    var guessnm = parseInt(guessnmb);
+    if (guessnm == secretnmb) {
+        var div = document.getElementById('guesss');
+        div.innerHTML = div.innerHTML + "Bingo! Correct Answer<br>";
+    } else if (guessnmb - secretnmb == 1 || guessnmb - secretnmb == -1) {
+        var div = document.getElementById('guesss');
+        div.innerHTML = div.innerHTML + "Close Enough to Correct Answer<br>";
+    } else {
+        var div = document.getElementById('guesss');
+        div.innerHTML = div.innerHTML + "Try Again<br>";
+    }
+}
+
+function divisibleby3() {
+    var nn = document.getElementById('nn').value;
+    var nnn = parseInt(nn);
+    if (nnn % 3 == 0) {
+        var div = document.getElementById('nnbb');
+        div.innerHTML = div.innerHTML + "Number is divisible by 3"
+    } else {
+        var div = document.getElementById('nnbb');
+        div.innerHTML = div.innerHTML + "Number is not divisible by 3"
+    }
+}
+
+function evenodd() {
+    var eeoo = document.getElementById('eeoo').value;
+    var eo = parseInt(eeoo);
+    if (eo % 2 == 0) {
+        var div = document.getElementById('eoo');
+        div.innerHTML = div.innerHTML + "Number is even"
+    } else {
+        var div = document.getElementById('eoo');
+        div.innerHTML = div.innerHTML + "Number is odd"
+    }
+}
+
+function temp() {
+    var tmp = document.getElementById('tmp').value;
+    var temper = parseInt(tmp);
+    if (temper > 40) {
+        var div = document.getElementById('temperature');
+        div.innerHTML = div.innerHTML + "It is too hot outside"
+    } else if (temper > 30) {
+        var div = document.getElementById('temperature');
+        div.innerHTML = div.innerHTML + "The weather today is Normal"
+    } else if (temper > 20) {
+        var div = document.getElementById('temperature');
+        div.innerHTML = div.innerHTML + "Today's weather is Cool"
+    } else {
+        var div = document.getElementById('temperature');
+        div.innerHTML = div.innerHTML + "OMG! Today's weather is so Cool."
+    }
+}
+
+function calculator() {
+    var numbb1 = document.getElementById('calnmb1').value;
+    var numb1 = parseInt(numbb1);
+    var numbb2 = document.getElementById('calnmb2').value;
+    var numb2 = parseInt(numbb2);
+    var operator = document.getElementById('operator').value;
+    if (operator == "+") {
+
+        var summ = numb1 + numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Sum of " + numb1 + " and " + numb2 + " is " + summ;
+    } else if (operator == "-") {
+
+        var suub = numb1 - numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Difference of " + numb1 + " and " + numb2 + " is " + suub;
+    } else if (operator == "*") {
+
+        var mull = numb1 * numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Product of " + numb1 + " and " + numb2 + " is " + mull;
+    } else if (operator == "/") {
+
+        var diviii = numb1 / numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Division of " + numb1 + " and " + numb2 + " is " + diviii;
+    } else {
+
+        var muood = numb1 % numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Mod of " + numb1 + " and " + numb2 + " is " + muood;
+    }
+
+
+}
