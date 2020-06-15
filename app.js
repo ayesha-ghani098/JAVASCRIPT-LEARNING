@@ -858,3 +858,179 @@ function order() {
     var div = document.getElementById('od');
     div.innerHTML = div.innerHTML + vn + " ordered " + qu + " " + pt + " on outfitters";
 }
+
+
+
+
+// Chapter 17--20 //
+
+
+let multiarr = [
+    [2, 4]
+];
+
+function multiarray() {
+    let mltarray = [
+        [0, 1, 2, 3],
+        [1, 0, 1, 2],
+        [2, 1, 0, 1]
+    ];
+    var div = document.getElementById('multi');
+    div.innerHTML = div.innerHTML + mltarray[0].join(" ") + "<br>";
+    var div = document.getElementById('multi');
+    div.innerHTML = div.innerHTML + mltarray[1].join(" ") + "<br>";
+    var div = document.getElementById('multi');
+    div.innerHTML = div.innerHTML + mltarray[2].join(" ") + "<br>";
+}
+
+
+
+function counting() {
+    var i = 1;
+    while (i <= 10) {
+        var div = document.getElementById('count');
+        div.innerHTML = div.innerHTML + i + "<br>";
+        i++;
+    }
+}
+
+
+function tabel() {
+    var sm1 = document.getElementById('snm1').value;
+    var snm1 = parseInt(sm1)
+    var sm2 = document.getElementById('snm2').value;
+    var snm2 = parseInt(sm2)
+    var d = 1;
+    const i = snm1;
+    var m;
+    while (d <= snm2) {
+        m = d * i;
+        var div = document.getElementById('ttbl');
+        div.innerHTML = div.innerHTML + i + " x " + d + " = " + m + "<br>";
+        d++;
+    }
+
+}
+
+function arrp() {
+    var fruits = ["apple ", "mango ", "banana ", "orange ", "peach "]
+    for (var o = 0; o < fruits.length; o++) {
+        var div = document.getElementById('arp');
+        div.innerHTML = div.innerHTML + "Element at index " + o + " is " + fruits[o] + "<br>";
+
+    }
+}
+
+
+function counting2() {
+    var i = 1;
+    while (i <= 15) {
+        var div = document.getElementById('id');
+        div.innerHTML = div.innerHTML + i + " ";
+        i++;
+    }
+    var div = document.getElementById('id');
+    div.innerHTML = div.innerHTML + "<br> ";
+}
+
+function reverse() {
+    var i = 10;
+    while (i >= 1) {
+        var div = document.getElementById('id');
+        div.innerHTML = div.innerHTML + i + " ";
+        i--;
+    }
+    var div = document.getElementById('id');
+    div.innerHTML = div.innerHTML + "<br> ";
+}
+
+function evenn() {
+    var i = 0;
+    while (i <= 20) {
+        if (i % 2 == 0) {
+            var div = document.getElementById('id');
+            div.innerHTML = div.innerHTML + i + " ";
+
+        }
+        i++;
+    }
+    var div = document.getElementById('id');
+    div.innerHTML = div.innerHTML + "<br> ";
+}
+
+function oddd() {
+    var i = 0;
+    while (i <= 20) {
+        if (i % 2 != 0) {
+            var div = document.getElementById('id');
+            div.innerHTML = div.innerHTML + i + " ";
+
+        }
+        i++;
+    }
+    var div = document.getElementById('id');
+    div.innerHTML = div.innerHTML + "<br> ";
+}
+
+function series() {
+    var i = 2;
+    while (i <= 20) {
+        var div = document.getElementById('id');
+        div.innerHTML = div.innerHTML + i + "k ";
+        i = i + 2;
+    }
+    var div = document.getElementById('id');
+    div.innerHTML = div.innerHTML + "<br> ";
+}
+
+
+function multipleof5() {
+
+    var mm = 5;
+    while (mm <= 100) {
+
+        var div = document.getElementById('mo5');
+        div.innerHTML = div.innerHTML + mm + " ";
+        mm = mm + 5;
+
+    }
+    var div = document.getElementById('mo5');
+    div.innerHTML = div.innerHTML + "<br> ";
+}
+
+function largestnumb() {
+    var arrays = [50, 90, 70, 68, 67, 24, 78, 69];
+    var div = document.getElementById('lmmm');
+    div.innerHTML = div.innerHTML + "Array is " + arrays + "<br>";
+    var array = arrays.sort();
+
+    var div = document.getElementById('lmmm');
+    div.innerHTML = div.innerHTML + "Largest Number is " + array[array.length - 1];
+}
+
+
+function smallestnumb() {
+    var arrays = [50, 90, 70, 68, 67, 24, 78, 69];
+    var div = document.getElementById('smmm');
+    div.innerHTML = div.innerHTML + "Array is " + arrays + "<br>";
+    var array = arrays.sort();
+
+    var div = document.getElementById('smmm');
+    div.innerHTML = div.innerHTML + "Smallest Number is " + array[0];
+}
+
+
+function cookies() {
+    var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+    var inp = document.getElementById('cookiess').value;
+    i = 0;
+    while (i < A.length - 1) {
+        if (inp == A[i]) {
+            var div = document.getElementById('ci');
+            div.innerHTML = div.innerHTML + A[i] + " is available at index " + i + " in our bakery";
+        }
+        i++;
+
+    }
+
+}
