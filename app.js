@@ -236,6 +236,8 @@ function load() {
 
 // Chapter 6---9 //
 
+
+
 function bload() {
     var t = 10;
     var div = document.getElementById('ab');
@@ -559,5 +561,123 @@ function calculator() {
         div.innerHTML = div.innerHTML + "Mod of " + numb1 + " and " + numb2 + " is " + muood;
     }
 
+
+}
+
+
+
+
+// Chapter 12--13 //
+
+
+function checkalphabet() {
+    var ccheckalp = document.getElementById('checkalph').value;
+    ccheckalph = ccheckalp.charCodeAt(0);
+
+
+    if (ccheckalph >= 65 && ccheckalph <= 90) {
+        var div = document.getElementById('cha');
+        div.innerHTML = div.innerHTML + "Character is a capital letter<br>";
+    } else if (ccheckalph >= 97 && ccheckalph <= 122) {
+        var div = document.getElementById('cha');
+        div.innerHTML = div.innerHTML + "Character is a small letter<br>";
+    } else if (ccheckalph >= 48 && ccheckalph <= 57) {
+        var div = document.getElementById('cha');
+        div.innerHTML = div.innerHTML + "Character is a digit<br>";
+    } else if ((ccheckalph > 0 && ccheckalph <= 47) || (ccheckalph >= 58 && ccheckalph <= 64) ||
+        (ccheckalph >= 91 && ccheckalph <= 96) || (ccheckalph >= 123 && ccheckalph <= 127)) {
+        var div = document.getElementById('cha');
+        div.innerHTML = div.innerHTML + "Character is a special symbol<br>";
+    }
+}
+
+function larger() {
+    var ln1 = document.getElementById('ln1').value;
+    var lrn1 = parseInt(ln1);
+    var ln2 = document.getElementById('ln2').value;
+    var lrn2 = parseInt(ln2);
+    if (lrn1 > lrn2 || lrn2 < lrn1) {
+        var div = document.getElementById('large');
+        div.innerHTML = div.innerHTML + lrn1 + " is larger<br>";
+    } else if (lrn2 > lrn1 || lrn1 < lrn2) {
+        var div = document.getElementById('large');
+        div.innerHTML = div.innerHTML + lrn2 + " is larger<br>";
+    } else if (lrn1 == lrn2) {
+        var div = document.getElementById('large');
+        div.innerHTML = div.innerHTML + "Equal<br>";
+    }
+}
+
+function posineg() {
+    var pn1 = document.getElementById('pnn').value;
+    var pn = parseInt(pn1);
+
+    if (pn > 0) {
+        var div = document.getElementById('positive');
+        div.innerHTML = div.innerHTML + "Number entered is positive<br>";
+    } else if (pn < 0) {
+        var div = document.getElementById('positive');
+        div.innerHTML = div.innerHTML + "Number entered is negative<br>";
+    } else {
+        var div = document.getElementById('positive');
+        div.innerHTML = div.innerHTML + "Number entered is zero<br>";
+    }
+}
+
+
+function checkvowel() {
+    var vvowel = document.getElementById('vo').value;
+    if (vvowel == "a" || vvowel == "e" || vvowel == "i" || vvowel == "o" || vvowel == "u" || vvowel == "A" || vvowel == "E" || vvowel == "I" || vvowel == "O" || vvowel == "U") {
+        var div = document.getElementById('vow');
+        div.innerHTML = div.innerHTML + "Entered alphabet is vowel <br>";
+    } else {
+        var div = document.getElementById('vow');
+        div.innerHTML = div.innerHTML + "Entered alphabet is not vowel <br>";
+    }
+}
+
+
+function checkpassword() {
+    var apass = "ayesha123";
+    var password = document.getElementById('pass').value;
+    if (password === apass) {
+        var div = document.getElementById('passs');
+        div.innerHTML = div.innerHTML + "Correct ! The password you entered matches the original one <br>";
+    } else {
+        var div = document.getElementById('passs');
+        div.innerHTML = div.innerHTML + "Incorrect password <br>";
+    }
+}
+
+function state() {
+    var greeting;
+    var hour = 13;
+    if (hour < 18) {
+        greeting = "Good day";
+        var div = document.getElementById('statement');
+        div.innerHTML = div.innerHTML + greeting;
+    } else {
+        greeting = "Good evening";
+        var div = document.getElementById('statement');
+        div.innerHTML = div.innerHTML + greeting;
+    }
+}
+
+
+function time() {
+    var nt = document.getElementById('ttime').value;
+    if (nt >= 0000 && nt < 1200) {
+        var div = document.getElementById('tttime');
+        div.innerHTML = div.innerHTML + "Good Morning!<br>";
+    } else if (nt >= 1200 && nt < 1700) {
+        var div = document.getElementById('tttime');
+        div.innerHTML = div.innerHTML + "Good Aftternoon!<br>";
+    } else if (nt >= 1700 && nt <= 2100) {
+        var div = document.getElementById('tttime');
+        div.innerHTML = div.innerHTML + "Good Evening!<br>";
+    } else if (nt >= 2100 && nt <= 2359) {
+        var div = document.getElementById('tttime');
+        div.innerHTML = div.innerHTML + "Good Night!<br>";
+    }
 
 }
