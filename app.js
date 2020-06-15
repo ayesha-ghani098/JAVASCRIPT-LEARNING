@@ -797,3 +797,47 @@ function ajoin() {
     var div = document.getElementById('join');
     div.innerHTML = div.innerHTML + cat.join(" ");
 }
+
+
+function gadgets() {
+    var gg = ["keyboard", "mouse", "printer", "monitor"];
+
+    var i = 0;
+    while (i < gg.length) {
+        var div = document.getElementById('ggg');
+        div.innerHTML = div.innerHTML + "Out: <br> ";
+        var div = document.getElementById('ggg');
+        div.innerHTML = div.innerHTML + gg[i] + "<br>";
+        i++;
+    }
+}
+
+function gadgets2() {
+    var gg = ["keyboard", "mouse", "printer", "monitor"];
+    var i = gg.length - 1;
+    while (i >= 0) {
+        var div = document.getElementById('ggg2');
+        div.innerHTML = div.innerHTML + "Out: <br> ";
+        var div = document.getElementById('ggg2');
+        div.innerHTML = div.innerHTML + gg[i] + "<br>";
+        i--;
+    }
+}
+
+
+
+var select = document.getElementById("arr");
+var elmts = ["Apple", "Motrolla", "Nokia", "Samsung", "Sony"];
+
+
+// Main function 
+function GFG_Fun() {
+    for (var i = 0; i < elmts.length; i++) {
+        var optn = elmts[i];
+        var el = document.createElement("option");
+        el.textContent = optn;
+        el.value = optn;
+        select.appendChild(el);
+    }
+    down.innerHTML = "Elements Added";
+}
