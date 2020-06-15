@@ -681,3 +681,119 @@ function time() {
     }
 
 }
+
+
+
+// Chapter 14--16 //
+
+
+var student_names = [];
+
+
+let students_name = {};
+
+var namess = ["Ayesha", "Faha", "Arshia"];
+
+var numbers = [9, 9, 7, 8];
+
+
+var boolarray = [true, false];
+
+var mixedarray = ["ayesha", 20, true];
+
+function q() {
+    var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+    var d = 1;
+    var i = 0;
+    var div = document.getElementById('qualifications');
+    div.innerHTML = div.innerHTML + "<h1>  Qualifications</h1><br> <br>";
+    while (i < 8) {
+        var div = document.getElementById('qualifications');
+        div.innerHTML = div.innerHTML + d + ")" + qualifications[i] + "<br><br>";
+        i++;
+        d++;
+    }
+}
+
+
+function score() {
+    var names = ["Ayesha", "Faha", "Maha"];
+    var i = 0;
+    var scores = [500, 499, 498];
+    while (i < scores.length) {
+
+        var per = scores[i] / 500 * 100;
+        var div = document.getElementById('sco');
+        div.innerHTML = div.innerHTML + "Score of " + names[i] + " is " + scores[i] + ". Percentage is " + per + " %<br>";
+        i++;
+    }
+
+
+}
+
+function add() {
+    var color_names = [];
+    var color = document.getElementById('ccolor').value;
+    color_names.push(color);
+    var div = document.getElementById('ccc');
+    div.innerHTML = div.innerHTML + color_names;
+
+}
+
+function addatend() {
+    var color_names = ["red", "green"];
+    var color = document.getElementById('olor').value;
+    color_names.push(color);
+    var div = document.getElementById('ddd');
+    div.innerHTML = div.innerHTML + color_names;
+
+}
+
+function addatbegin() {
+    var color_names = ["red", "green"];
+    var color = document.getElementById('lor').value;
+    color_names.unshift(color);
+    var div = document.getElementById('ee');
+    div.innerHTML = div.innerHTML + color_names;
+
+}
+
+function deltatbegin() {
+    var color_names = ["red", "green"];
+    color_names.shift(0);
+    var div = document.getElementById('db');
+    div.innerHTML = div.innerHTML + color_names;
+
+}
+
+function deltatlast() {
+    var color_names = ["red", "green", "purple", "yellow"];
+    color_names.pop();
+    var div = document.getElementById('dl');
+    div.innerHTML = div.innerHTML + color_names;
+
+}
+
+
+
+function arraysort() {
+    var arrays = [500, 900, 700, 678, 678];
+    var div = document.getElementById('sort');
+    div.innerHTML = div.innerHTML + arrays.sort();
+
+
+}
+
+
+function cities() {
+    var cities = ["Karachi", "Islamabad", "Lahore", "Rawalpindi"];
+    var selectedcities = [cities[0], cities[2]];
+    var div = document.getElementById('citi');
+    div.innerHTML = div.innerHTML + selectedcities;
+}
+
+function ajoin() {
+    var cat = ["This", "is", "a", "Cat"];
+    var div = document.getElementById('join');
+    div.innerHTML = div.innerHTML + cat.join(" ");
+}
