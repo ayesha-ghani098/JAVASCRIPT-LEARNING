@@ -841,3 +841,20 @@ function GFG_Fun() {
     }
     down.innerHTML = "Elements Added";
 }
+
+
+
+function biyr() {
+    var bt = 2000;
+    var div = document.getElementById('birthyr');
+    div.innerHTML = div.innerHTML + "My birth year is " + bt + "<br> Data type of my declared variable is number";
+}
+
+
+function order() {
+    var vn = "Ayesha";
+    var pt = "Sweatshirts";
+    var qu = 6;
+    var div = document.getElementById('od');
+    div.innerHTML = div.innerHTML + vn + " ordered " + qu + " " + pt + " on outfitters";
+}
