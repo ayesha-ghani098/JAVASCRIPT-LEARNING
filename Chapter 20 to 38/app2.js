@@ -73,3 +73,50 @@ function tc() {
     var div = document.getElementById('tcase');
     div.innerHTML = div.innerHTML + sentence.join();
 }
+
+
+
+function numtostr() {
+    var num = 47.2;
+    var div = document.getElementById('nts');
+    div.innerHTML = div.innerHTML + "Value: " + num + "<br> Type: " + typeof(num) + "<br>";
+    var integer = num.toString();
+    var int = integer.split(".");
+    int = int.join("");
+    var div = document.getElementById('nts');
+    div.innerHTML = div.innerHTML + "Value: " + int + "<br> Type: " + typeof(int) + "<br>";
+
+}
+
+
+function split() {
+    var university = "University of Karachi";
+    var array = university.split("");
+    for (var i = 0; i < university.length; i++) {
+        var div = document.getElementById('splitt');
+        div.innerHTML = div.innerHTML + array[i] + "<br>";
+    }
+
+}
+
+function lastchar() {
+    var word = document.getElementById('laastchar').value;
+    var div = document.getElementById('lc');
+    div.innerHTML = div.innerHTML + "Last Character : " + word.charAt(word.length - 1);
+}
+
+
+function occurrencecheck() {
+    var sentence = "The quick brown fox jumps over the lazy dog";
+    var sen = sentence.split(" ");
+    var count = 0;
+    for (var i = 0; i < sen.length - 1; i++) {
+        if (sen[i] == "the" || sen[i] == "The" || sen[i] == "THE") {
+            count++;
+        }
+    }
+    var div = document.getElementById('oc');
+    div.innerHTML = div.innerHTML + "Text: The quick brown fox jumps over the lazy dog <br>";
+    var div = document.getElementById('oc');
+    div.innerHTML = div.innerHTML + "There are " + count + " occurences of 'the' <br>";
+}
