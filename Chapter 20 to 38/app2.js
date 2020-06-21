@@ -120,3 +120,92 @@ function occurrencecheck() {
     var div = document.getElementById('oc');
     div.innerHTML = div.innerHTML + "There are " + count + " occurences of 'the' <br>";
 }
+
+
+
+function rn() {
+    var numbe = document.getElementById('numb').value;
+    var number = parseFloat(numbe);
+    var div = document.getElementById('q1');
+    div.innerHTML = div.innerHTML + "Number: " + number + " <br>";
+    var round = Math.round(number);
+    var div = document.getElementById('q1');
+    div.innerHTML = div.innerHTML + "Round off value: " + round + " <br>";
+    var floor = Math.floor(number);
+    var div = document.getElementById('q1');
+    div.innerHTML = div.innerHTML + "Floor value: " + floor + " <br>";
+    var ceil = Math.ceil(number);
+    var div = document.getElementById('q1');
+    div.innerHTML = div.innerHTML + "Ceil value: " + ceil + " <br>";
+
+}
+
+function negrn() {
+    var numbe = document.getElementById('numb2').value;
+    var number = parseFloat(numbe);
+    var div = document.getElementById('q2');
+    div.innerHTML = div.innerHTML + "Number: " + number + " <br>";
+    var round = Math.round(number);
+    var div = document.getElementById('q2');
+    div.innerHTML = div.innerHTML + "Round off value: " + round + " <br>";
+    var floor = Math.floor(number);
+    var div = document.getElementById('q2');
+    div.innerHTML = div.innerHTML + "Floor value: " + floor + " <br>";
+    var ceil = Math.ceil(number);
+    var div = document.getElementById('q2');
+    div.innerHTML = div.innerHTML + "Ceil value: " + ceil + " <br>";
+
+}
+
+
+function absolute() {
+    var numbe = document.getElementById('numb3').value;
+    var number = parseInt(numbe);
+    var numberr = Math.abs(number);
+    var div = document.getElementById('q3');
+    div.innerHTML = div.innerHTML + "The Absolute Value of " + number + " is " + numberr + " <br>";
+}
+
+function dice() {
+    var bigDecimal = Math.random();
+    var improvedNum = (bigDecimal * 6) + 1;
+    var randomnumb = Math.floor(improvedNum);
+    var div = document.getElementById('q4');
+    div.innerHTML = div.innerHTML + "Random Dice Value:" + randomnumb + "<br>";
+}
+
+function coin() {
+    x = (Math.floor(Math.random() * 2) == 0);
+    if (x) {
+        var div = document.getElementById('q5');
+        div.innerHTML = div.innerHTML + "2 <br> Random coin value: " + "Heads <br>";
+    } else {
+        var div = document.getElementById('q5');
+        div.innerHTML = div.innerHTML + "1 <br> Random coin value: " + "Tails <br>";
+    }
+}
+
+
+
+function randomgen() {
+    var a = Math.floor(Math.random() * 100) + 1;
+    var div = document.getElementById('q6');
+    div.innerHTML = div.innerHTML + "Random Number Between 1 to 100: " + a + "<br>";
+}
+
+
+function guessgame() {
+    var secretnmb = 5;
+    var guessnmb = document.getElementById('guessnmb').value;
+    var guessnm = parseInt(guessnmb);
+    if (guessnm == secretnmb) {
+        var div = document.getElementById('q8');
+        div.innerHTML = div.innerHTML + "Bingo! Correct Answer<br>";
+    } else if (guessnmb - secretnmb == 1 || guessnmb - secretnmb == -1) {
+        var div = document.getElementById('q8');
+        div.innerHTML = div.innerHTML + "Close Enough to Correct Answer<br>";
+    } else {
+        var div = document.getElementById('q8');
+        div.innerHTML = div.innerHTML + "Try Again<br>";
+    }
+}
