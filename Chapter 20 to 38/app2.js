@@ -1,6 +1,6 @@
 function entername() {
-    var fn = prompt("Enter you First Name");
-    var sn = prompt("Enter you Last Name");
+    var fn = prompt("Enter your First Name");
+    var sn = prompt("Enter your Last Name");
     var titled = fn + " " + sn;
     alert("Hello " + titled);
 }
@@ -208,4 +208,116 @@ function guessgame() {
         var div = document.getElementById('q8');
         div.innerHTML = div.innerHTML + "Try Again<br>";
     }
+}
+
+
+function date() {
+    var rightNow = new Date();
+    var datestr = rightNow.toString();
+    var div = document.getElementById('q9');
+    div.innerHTML = div.innerHTML + datestr + "<br>";
+
+}
+
+
+function month() {
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var now = new Date();
+    var month = now.getMonth();
+    var nameOfmonth = monthNames[month];
+    var div = document.getElementById('q10');
+    div.innerHTML = div.innerHTML + "Current Month : " + nameOfmonth + "<br>";
+}
+
+function funday() {
+    var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var now = new Date();
+    var theDay = now.getDay();
+    var nameOfToday = dayNames[theDay];
+    if (nameOfToday == "Sat" || nameOfToday == "Sunday") {
+        var div = document.getElementById('q12');
+        div.innerHTML = div.innerHTML + "Its Funday!";
+    } else {
+        var div = document.getElementById('q12');
+        div.innerHTML = div.innerHTML + "Its not Funday!";
+    }
+}
+
+function letter3() {
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var now = new Date();
+    var theDay = now.getDay();
+    var nameOfToday = dayNames[theDay];
+    var div = document.getElementById('q11');
+    div.innerHTML = div.innerHTML + "Today is  " + nameOfToday.slice(0, 3) + "<br>";
+}
+
+function fl() {
+    var now = new Date();
+    var theDay = now.getDate();
+    if (theDay <= 15) {
+        var div = document.getElementById('q13');
+        div.innerHTML = div.innerHTML + "First fifteen days of the month";
+    } else {
+        var div = document.getElementById('q13');
+        div.innerHTML = div.innerHTML + "Last days of the month";
+    }
+}
+
+
+function sum() {
+    var a1 = document.getElementById('n1').value;
+    var a = parseInt(a1);
+    var b1 = document.getElementById('n2').value;
+    var b = parseInt(b1);
+    var sum = a + b;
+    var div = document.getElementById('sum');
+    div.innerHTML = div.innerHTML + "Sum of " + a + " and " + b + " is " + sum;
+}
+
+
+function calculator() {
+    var numbb1 = document.getElementById('calnmb1').value;
+    var numb1 = parseInt(numbb1);
+    var numbb2 = document.getElementById('calnmb2').value;
+    var numb2 = parseInt(numbb2);
+    var operator = document.getElementById('operator').value;
+    if (operator == "+") {
+
+        var summ = numb1 + numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Sum of " + numb1 + " and " + numb2 + " is " + summ;
+    } else if (operator == "-") {
+
+        var suub = numb1 - numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Difference of " + numb1 + " and " + numb2 + " is " + suub;
+    } else if (operator == "*") {
+
+        var mull = numb1 * numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Product of " + numb1 + " and " + numb2 + " is " + mull;
+    } else if (operator == "/") {
+
+        var diviii = numb1 / numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Division of " + numb1 + " and " + numb2 + " is " + diviii;
+    } else {
+
+        var muood = numb1 % numb2;
+        var div = document.getElementById('cal');
+        div.innerHTML = div.innerHTML + "Mod of " + numb1 + " and " + numb2 + " is " + muood;
+    }
+
+
+}
+
+
+var num = document.getElementById('sqnmb1').value;
+var nu = parseInt(num);
+
+function squ(nu) {
+    var sq = nu * nu;
+    var div = document.getElementById('square');
+    div.innerHTML = div.innerHTML + "Square of given number : " + sq;
 }
