@@ -313,11 +313,43 @@ function calculator() {
 }
 
 
-var num = document.getElementById('sqnmb1').value;
-var nu = parseInt(num);
 
-function squ(nu) {
+function squ(a) {
+    var nu = parseInt(a);
     var sq = nu * nu;
     var div = document.getElementById('square');
-    div.innerHTML = div.innerHTML + "Square of given number : " + sq;
+    div.innerHTML = div.innerHTML + "Square of given number : " + sq + "<br>";
+}
+
+function factorial(n) {
+    var f = parseInt(n);
+    var ans = 1;
+    for (var i = f; i >= 1; i--) {
+        ans = ans * i;
+    }
+    var div = document.getElementById('f');
+    div.innerHTML = div.innerHTML + "Factorial of given number : " + ans + "<br>";
+}
+
+function counting(nmbr1, nmbr2) {
+    var no = parseInt(nmbr1);
+    var nt = parseInt(nmbr2);
+    for (var i = no; i <= nt; i++) {
+        var div = document.getElementById('c');
+        div.innerHTML = div.innerHTML + i + " ";
+    }
+}
+
+function hypotenuse(base, perp) {
+    var b = parseFloat(base);
+    var p = parseFloat(perp);
+
+    function square(n) {
+        return n * n;
+    }
+    var bs = square(b);
+    var ps = square(p);
+    h = Math.sqrt(bs + ps);
+    var div = document.getElementById('hyp');
+    div.innerHTML = div.innerHTML + "Hypotenuse: " + h;
 }
