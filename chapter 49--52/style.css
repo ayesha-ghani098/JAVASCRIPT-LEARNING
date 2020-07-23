@@ -1,0 +1,12 @@
+#form {
+    width: 300px;
+    background-color: blue;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px 25px;
+}
+
+button {
+    margin-left: 20%;
+}
