@@ -17,3 +17,16 @@ function imagechng() {
 function firstpic() {
     img.src = "images/10.jpg";
 }
+
+// counter//
+var i = 0;
+var x = document.getElementById('value');
+x.innerHTML = i;
+
+function inc() {
+    x.innerHTML = ++i;
+}
+
+function dec() {
+    x.innerHTML = --i;
+}
